@@ -1,3 +1,4 @@
+print("BOT FILE LOADED")
 import requests
 import time
 import sqlite3
