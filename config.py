@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 TOKEN ="8760980789:AAH5EyTwRbLADjr52CL-IvoBGtQUo9TVS6Q"
 GROUP_ID = -1003509548150
 PUBLISH_TIME = "10:00"
-=======
 import os
 from dotenv import load_dotenv
 
@@ -19,4 +17,3 @@ DATABASE_PATH = os.getenv('DATABASE_PATH', 'bot_database.db')
 
 # Environment
 DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
->>>>>>> cf7d905699eef7cdaf902a7846ad76a8bb4523d5
