@@ -1,0 +1,6 @@
+.ssh/
+.config/
+__pycache__/
+*.pyc
+bot.db
+.env
