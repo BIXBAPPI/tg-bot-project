@@ -232,3 +232,11 @@ git push origin main
 git add .
 git commit -m "stable bot"
 git push origin main
+python bot.py
+tmux
+echo $TMUX
+tmux
+echo $TMUX
+tmux
+rm tmux
+exit
