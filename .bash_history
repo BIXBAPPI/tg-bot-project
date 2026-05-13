@@ -213,3 +213,22 @@ gh auth login
 python bot.py
 nano requirements.txt
 python bot.py
+nano bot.py
+python bot.py
+nano bot.py
+python bot.py
+pip install -r requirements.txt
+nano requirements.txt)
+nano requirements.txt
+pip install -r requirements.txt
+/start
+/help
+python bit.py
+python.bot.py
+python bot.py
+git add .
+git commit -m "working bot"
+git push origin main
+git add .
+git commit -m "stable bot"
+git push origin main
