@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import requests
 import time
 import sqlite3
@@ -21,9 +20,7 @@ def keep_alive():
     t = Thread(target=run)
     t.start()
 
-# =========================
 # CONFIG
-# =========================
 
 TOKEN = "8760980789:AAH5EyTwRbLADjr52CL-IvoBGtQUo9TVS6Q"
 
@@ -31,9 +28,7 @@ URL = f"https://api.telegram.org/bot{TOKEN}"
 
 PUBLISH_GROUP = -1003509548150
 
-# =========================
 # DATABASE
-# =========================
 
 conn = sqlite3.connect("bot.db", check_same_thread=False)
 cur = conn.cursor()
@@ -51,9 +46,7 @@ CREATE TABLE IF NOT EXISTS users (
 
 conn.commit()
 
-# =========================
 # FUNCTIONS
-# =========================
 
 def send_message(chat_id, text):
 
@@ -81,9 +74,9 @@ def add_user(user_id, username):
 
     conn.commit()
 
-# =========================
+
 # BOT START
-# =========================
+
 
 print("Bot running 😭🔥")
 
@@ -118,9 +111,7 @@ while True:
 
             add_user(user_id, username)
 
-            # =========================
             # START
-            # =========================
 
             if text == "/start":
 
@@ -129,9 +120,7 @@ while True:
                     "🔥 Engagement Bot Active\n\nCommands:\n/start\n/submit LINK\n/me\n/leaderboard\n/daily"
                 )
 
-            # =========================
             # SUBMIT
-            # =========================
 
             elif text.startswith("/submit"):
 
@@ -165,9 +154,7 @@ while True:
                         "✅ Submission Added\n🔥 +10 XP"
                     )
 
-            # =========================
             # PROFILE
-            # =========================
 
             elif text == "/me":
 
@@ -187,16 +174,13 @@ while True:
                     f"👤 @{username}\n\n🔥 XP: {xp}\n📩 Submits: {submits}\n📅 Streak: {streak}"
                 )
 
-            # =========================
             # LEADERBOARD
-            # =========================
 
             elif text == "/leaderboard":
 
                 cur.execute(
                     "SELECT username, xp FROM users ORDER BY xp DESC LIMIT 10"
                 )
-
                 rows = cur.fetchall()
 
                 board = "🏆 LEADERBOARD\n\n"
@@ -211,9 +195,7 @@ while True:
 
                 send_message(chat_id, board)
 
-            # =========================
             # DAILY
-            # =========================
 
             elif text == "/daily":
 
@@ -257,7 +239,6 @@ while True:
 if __name__ == "__main__":
     keep_alive()
 
-=======
 import logging
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
@@ -312,4 +293,4 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
->>>>>>> cf7d905699eef7cdaf902a7846ad76a8bb4523d5
+ 

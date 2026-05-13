@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 flask
 python-telegram-bot
 apscheduler
-=======
+
 python-telegram-bot==20.3
 Flask==3.0.0
 python-dotenv==1.0.0
->>>>>>> cf7d905699eef7cdaf902a7846ad76a8bb4523d5
 
